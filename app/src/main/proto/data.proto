@@ -1,0 +1,12 @@
+syntax = "proto3";
+package com.coderzeng.protobuf.data;
+option java_outer_classname = "BlEData";
+message Protos{
+  int32 code = 1;
+
+  message  MessageInfo{
+  string path = 1;
+  }
+  repeated MessageInfo messageInfo = 2;
+}
+
